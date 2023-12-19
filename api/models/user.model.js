@@ -5,18 +5,18 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true,
-        minlength: 6
+        minlength: 4
     },
     email: {
         type: String,
         required: true,
         unique: true,
-        minlength: 6
+        minlength: 4
     },
     password: {
         type: String,
         required: true,
-        minlength: 6
+        minlength: 4
     }
     // able to sort data by time created
 }, { timestamps: true });
